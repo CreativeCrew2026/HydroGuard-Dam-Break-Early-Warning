@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HydroGuard | Dam-Break Flood Early Warning</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            🌊 HYDROGUARD
+        </div>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#simulation">Simulation</a>
+            <a href="#risk">Risk Map</a>
+            <a href="#warning">Early Warning</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="tagline">
+                SMART FLOOD MANAGEMENT SYSTEM
+            </p>
+
+            <h1>
+                Dam-Break Flood<br>
+                Early Warning System
+            </h1>
+
+            <p>
+                Predict flood behaviour, identify risk zones,
+                and support faster evacuation through
+                simulation-driven decision support.
+            </p>
+
+            <button onclick="runSimulation()">
+                ▶ RUN FLOOD SIMULATION
+            </button>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="water-circle">
+                🌊
+            </div>
+
+            <h3>
+                PREDICT • ASSESS • WARN • EVACUATE
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="section">
+
+        <div class="section-title">
+            <p>LIVE MONITORING</p>
+            <h2>Flood Risk Dashboard</h2>
+        </div>
+
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+                <span class="icon">🌧️</span>
+                <h3>Rainfall</h3>
+                <strong>72 mm</strong>
+                <p>Current rainfall</p>
+            </div>
+
+
+            <div class="card">
+                <span class="icon">🌊</span>
+                <h3>Water Level</h3>
+                <strong>18.4 m</strong>
+                <p>Reservoir level</p>
+            </div>
+
+
+            <div class="card">
+                <span class="icon">⚠️</span>
+                <h3>Risk Level</h3>
+                <strong class="high">HIGH</strong>
+                <p>Current risk status</p>
+            </div>
+
+
+            <div class="card">
+                <span class="icon">⏱️</span>
+                <h3>Flood Arrival</h3>
+                <strong>42 min</strong>
+                <p>Estimated arrival</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SIMULATION -->
+    <section id="simulation" class="section dark-section">
+
+        <div class="section-title">
+            <p>HYDRODYNAMIC MODEL</p>
+            <h2>Flood Simulation</h2>
+        </div>
+
+
+        <div class="simulation-box">
+
+            <div>
+                <span class="simulation-icon">🌊</span>
+
+                <h2>
+                    HEC-RAS 1D/2D Simulation
+                </h2>
+
+                <p>
+                    Dam-break parameters are processed
+                    to estimate flood extent, depth,
+                    velocity and arrival time.
+                </p>
+
+            </div>
+
+
+            <div class="simulation-results">
+
+                <div>
+                    <span>Flood Depth</span>
+                    <strong>4.8 m</strong>
+                </div>
+
+                <div>
+                    <span>Velocity</span>
+                    <strong>3.2 m/s</strong>
+                </div>
+
+                <div>
+                    <span>Flood Extent</span>
+                    <strong>12.6 km²</strong>
+                </div>
+
+                <div>
+                    <span>Arrival Time</span>
+                    <strong>42 min</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RISK MAP -->
+    <section id="risk" class="section">
+
+        <div class="section-title">
+            <p>GIS ANALYSIS</p>
+            <h2>Flood Risk Intelligence</h2>
+        </div>
+
+
+        <div class="risk-container">
+
+            <div class="map-placeholder">
+
+                <div class="map-content">
+
+                    <span>🗺️</span>
+
+                    <h3>
+                        GIS Flood Risk Map
+                    </h3>
+
+                    <p>
+                        Flood extent and risk zones
+                        identified using spatial analysis.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="risk-info">
+
+                <div class="risk-item">
+                    <span class="risk-dot safe"></span>
+
+                    <div>
+                        <strong>LOW RISK</strong>
+                        <p>Safe / minimal impact</p>
+                    </div>
+                </div>
+
+
+                <div class="risk-item">
+                    <span class="risk-dot medium"></span>
+
+                    <div>
+                        <strong>MEDIUM RISK</strong>
+                        <p>Monitor and prepare</p>
+                    </div>
+                </div>
+
+
+                <div class="risk-item">
+                    <span class="risk-dot danger"></span>
+
+                    <div>
+                        <strong>HIGH RISK</strong>
+                        <p>Evacuation recommended</p>
+                    </div>
+                </div>
+
+
+                <div class="population-box">
+
+                    <span>👥</span>
+
+                    <div>
+                        <strong>2,450</strong>
+                        <p>Population at Risk</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EARLY WARNING -->
+    <section id="warning" class="section warning-section">
+
+        <div class="warning-box">
+
+            <div class="warning-icon">
+                🚨
+            </div>
+
+            <div>
+
+                <p class="warning-label">
+                    EARLY WARNING
+                </p>
+
+                <h2>
+                    HIGH FLOOD RISK DETECTED
+                </h2>
+
+                <p>
+                    Flood may reach affected areas
+                    in approximately <strong>42 minutes.</strong>
+                </p>
+
+            </div>
+
+            <div class="warning-buttons">
+
+                <button>
+                    📍 EVACUATION ROUTE
+                </button>
+
+                <button>
+                    📱 SEND ALERT
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🌊 HYDROGUARD</h3>
+
+        <p>
+            Dam-Break Flood Early Warning &
+            Decision Support System
+        </p>
+
+        <p class="footer-small">
+            SIH 2026 | Smart Disaster Management
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

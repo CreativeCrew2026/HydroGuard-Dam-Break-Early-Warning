@@ -81,11 +81,30 @@ function showEvacuationRoute() {
 
 function sendAlert() {
 
-    alert(
-        "📱 EMERGENCY ALERT\n\n" +
-        "High flood risk alert prepared.\n\n" +
-        "Alert will notify residents in affected zones."
-    );
+    const button = document.querySelector(".alert-action button");
+
+    button.innerHTML = "⏳ SENDING ALERT...";
+    button.disabled = true;
+
+    setTimeout(function () {
+
+        button.innerHTML = "✓ ALERT SENT";
+        button.disabled = false;
+
+        alert(
+            "🚨 EMERGENCY ALERT SENT\n\n" +
+            "Risk Level: HIGH\n" +
+            "People at Risk: 2,450\n" +
+            "Villages Affected: 8\n" +
+            "Flood Arrival: 36 minutes\n\n" +
+            "Alert channels activated:\n" +
+            "✓ Mobile App\n" +
+            "✓ SMS\n" +
+            "✓ Web Dashboard\n" +
+            "✓ Authority Alert"
+        );
+
+    }, 1500);
 }
 
 

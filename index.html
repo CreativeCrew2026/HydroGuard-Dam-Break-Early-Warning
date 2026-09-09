@@ -389,48 +389,125 @@
 </section>
 
     <!-- EARLY WARNING -->
-    <section id="warning" class="section warning-section">
+<section id="warning" class="section warning-section">
 
-        <div class="warning-box">
+    <div class="section-title">
+        <p>EMERGENCY RESPONSE</p>
+        <h2>Early Warning & Alert System</h2>
+    </div>
 
-            <div class="warning-icon">
-                🚨
+    <div class="alert-dashboard">
+
+        <!-- ALERT STATUS -->
+        <div class="alert-status">
+
+            <div class="alert-top">
+                <span class="live-dot"></span>
+                <span>LIVE ALERT STATUS</span>
             </div>
+
+            <h2>🚨 HIGH FLOOD RISK</h2>
+
+            <p>
+                Dam-break simulation indicates a high-risk
+                flood condition in downstream areas.
+            </p>
+
+            <div class="alert-time">
+                Last analysis: Just now
+            </div>
+
+        </div>
+
+
+        <!-- IMPACT DATA -->
+        <div class="impact-data">
+
+            <div class="impact-card">
+                <span>👥</span>
+                <strong>2,450</strong>
+                <p>People at Risk</p>
+            </div>
+
+            <div class="impact-card">
+                <span>🏘️</span>
+                <strong>8</strong>
+                <p>Villages Affected</p>
+            </div>
+
+            <div class="impact-card">
+                <span>🛣️</span>
+                <strong>5</strong>
+                <p>Roads at Risk</p>
+            </div>
+
+            <div class="impact-card">
+                <span>⏱️</span>
+                <strong>36 min</strong>
+                <p>Flood Arrival</p>
+            </div>
+
+        </div>
+
+
+        <!-- ALERT ACTION -->
+        <div class="alert-action">
 
             <div>
-
-                <p class="warning-label">
-                    EARLY WARNING
-                </p>
-
-                <h2>
-                    HIGH FLOOD RISK DETECTED
-                </h2>
+                <h3>Emergency Alert</h3>
 
                 <p>
-                    Flood may reach affected areas
-                    in approximately <strong>42 minutes.</strong>
+                    Send warning to residents and
+                    disaster-management authorities
+                    in affected zones.
                 </p>
-
             </div>
 
-            <div class="warning-buttons">
+            <button onclick="sendAlert()">
+                📱 SEND EMERGENCY ALERT
+            </button>
 
-                <button>
-                    📍 EVACUATION ROUTE
-                </button>
+        </div>
 
-                <button>
-                    📱 SEND ALERT
-                </button>
+
+        <!-- ALERT CHANNELS -->
+        <div class="alert-channels">
+
+            <h3>Alert Channels</h3>
+
+            <div class="channel-list">
+
+                <div class="channel">
+                    <span>📱</span>
+                    <strong>Mobile App</strong>
+                    <small>Ready</small>
+                </div>
+
+                <div class="channel">
+                    <span>💬</span>
+                    <strong>SMS</strong>
+                    <small>Ready</small>
+                </div>
+
+                <div class="channel">
+                    <span>🌐</span>
+                    <strong>Web Dashboard</strong>
+                    <small>Active</small>
+                </div>
+
+                <div class="channel">
+                    <span>📢</span>
+                    <strong>Authority Alert</strong>
+                    <small>Ready</small>
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-
+</section>
     <!-- FOOTER -->
     <footer>
 

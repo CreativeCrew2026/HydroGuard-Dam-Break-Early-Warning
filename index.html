@@ -23,6 +23,7 @@
             <a href="#simulation">Simulation</a>
             <a href="#risk">Risk Map</a>
             <a href="#warning">Early Warning</a>
+            <a href="#evacuation">Evacuation</a>
         </nav>
     </header>
 
@@ -286,7 +287,106 @@
         </div>
 
     </section>
+    <!-- EVACUATION -->
+<section id="evacuation" class="section evacuation-section">
 
+    <div class="section-title">
+        <p>DISASTER RESPONSE</p>
+        <h2>Evacuation & Safe Zones</h2>
+    </div>
+
+    <div class="evacuation-container">
+
+        <!-- ROUTE CARD -->
+        <div class="route-card">
+
+            <div class="route-header">
+                <span class="route-icon">📍</span>
+
+                <div>
+                    <h3>Recommended Evacuation Route</h3>
+                    <p>Fastest route to nearest safe zone</p>
+                </div>
+            </div>
+
+            <div class="route-path">
+
+                <div class="route-point">
+                    <span class="point dam-point">💧</span>
+                    <div>
+                        <strong>Dam / Breach Point</strong>
+                        <small>Flood source</small>
+                    </div>
+                </div>
+
+                <div class="route-line"></div>
+
+                <div class="route-point">
+                    <span class="point danger-point">⚠️</span>
+                    <div>
+                        <strong>Affected Village</strong>
+                        <small>High-risk zone</small>
+                    </div>
+                </div>
+
+                <div class="route-line"></div>
+
+                <div class="route-point">
+                    <span class="point safe-point">🟢</span>
+                    <div>
+                        <strong>Community Safe Zone</strong>
+                        <small>Nearest evacuation center</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <button onclick="showEvacuationRoute()">
+                📍 VIEW EVACUATION ROUTE
+            </button>
+
+        </div>
+
+
+        <!-- SAFE ZONE CARD -->
+        <div class="safe-zone-card">
+
+            <div class="safe-zone-icon">
+                🛡️
+            </div>
+
+            <h3>Nearest Safe Zone</h3>
+
+            <h2>Community Relief Center</h2>
+
+            <div class="safe-details">
+
+                <div>
+                    <strong>2.4 km</strong>
+                    <span>Distance</span>
+                </div>
+
+                <div>
+                    <strong>12 min</strong>
+                    <span>Travel Time</span>
+                </div>
+
+            </div>
+
+            <div class="capacity">
+                <span>👥</span>
+
+                <div>
+                    <strong>Capacity: 3,000</strong>
+                    <p>Available evacuation facility</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- EARLY WARNING -->
     <section id="warning" class="section warning-section">
